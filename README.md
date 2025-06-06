@@ -1,2 +1,2 @@
-# chaitanyachukka.github.io
+# chaitanya-chukka.github.io
 Personal portfolio website
