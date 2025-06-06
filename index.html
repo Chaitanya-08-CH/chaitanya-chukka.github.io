@@ -3,36 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stripe-Style Hero</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body class="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white">
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center px-4">
-    <div class="text-center max-w-3xl">
-      <h1 class="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
-        The Future of <span class="text-indigo-500">Modern Web</span> Design
-      </h1>
-      <p class="text-lg sm:text-xl opacity-80 mb-8">
-        Build responsive, elegant, and animated websites like Stripe with clean HTML & Tailwind CSS.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#get-started" class="bg-indigo-600 hover:bg-indigo-700 transition px-6 py-3 rounded-xl font-semibold">
-          Get Started
-        </a>
-        <a href="#learn-more" class="border border-white hover:border-indigo-500 px-6 py-3 rounded-xl font-semibold transition">
-          Learn More
-        </a>
+  <section id="hero">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Web Developer | Designer | Tech Enthusiast</p>
+    <a href="#portfolio" class="btn">View My Work</a>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="assets/project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Description of project 1.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Description of project 2.</p>
       </div>
     </div>
   </section>
 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer with experience in building modern websites and web apps. I love learning new technologies and solving real-world problems.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" name="name" required>
+      <input type="email" placeholder="Your Email" name="email" required>
+      <textarea placeholder="Your Message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <section id="hero">
+  <canvas id="hero-canvas"></canvas>
+</section>
+
+
+  <footer>
+    <p>© 2025 [Your Name]. All rights reserved.</p>
+  </footer>
 </body>
 </html>
