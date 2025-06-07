@@ -3,52 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">MyPortfolio</div>
+      <div class="logo">CyberSecure</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
-    <a href="#portfolio" class="btn">View My Work</a>
+  <section id="hero" class="scroll-section">
+    <h1>Hi, I'm Chaitanya Chukka</h1>
+    <p>Cybersecurity Graduate | Ethical Hacking | Digital Defense</p>
+    <img src="assets/IMG1.jpg" alt="Chaitanya Chukka" class="profile-pic" />
+    <p class="university-info">Master's in Cybersecurity at University of Central Missouri</p>
+    <p>Email: <a href="mailto:chukkachaitanya14@gmail.com">chukkachaitanya14@gmail.com</a></p>
+    <div class="scroll-down">↓</div>
   </section>
 
-  <section id="portfolio">
-    <h2>My Projects</h2>
+  <section id="skills" class="scroll-section">
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li>Network Security</li>
+      <li>Penetration Testing</li>
+      <li>Python, Bash</li>
+      <li>Snort, Suricata</li>
+      <li>Wireshark, Metasploit, Burp Suite, Nessus</li>
+    </ul>
+
+    <h2>Soft Skills</h2>
+    <ul class="skills-list">
+      <li>Problem Solving</li>
+      <li>Team Collaboration</li>
+      <li>Critical Thinking</li>
+      <li>Adaptability</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul class="certifications-list">
+      <li>CompTIA Security+</li>
+      <li>CEH (Certified Ethical Hacker) - In Progress</li>
+      <li>Google Cybersecurity Certificate</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="scroll-section">
+    <h2>Cybersecurity Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="assets/project1.jpg" alt="Project 1">
-        <h3>Project Title 1</h3>
-        <p>Description of project 1.</p>
+        <img src="assets/project1.jpg" alt="Network Security Project">
+        <h3>Network Intrusion Detection System</h3>
+        <p>Built a real-time intrusion detection system using Snort and Suricata to detect suspicious network traffic.</p>
       </div>
       <div class="project-card">
-        <img src="assets/project2.jpg" alt="Project 2">
-        <h3>Project Title 2</h3>
-        <p>Description of project 2.</p>
+        <img src="assets/project2.jpg" alt="Vulnerability Assessment">
+        <h3>Vulnerability Assessment Tool</h3>
+        <p>Developed an automated vulnerability scanner using Python and Nmap for system auditing.</p>
       </div>
+    </div>
+
+    <h2>Connect with Me</h2>
+    <div class="social-links">
+      <a href="https://github.com/chaitanya-08-ch" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/chaitanyachukka" target="_blank">LinkedIn</a>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a passionate developer with experience in building modern websites and web apps. I love learning new technologies and solving real-world problems.</p>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="scroll-section">
     <h2>Contact Me</h2>
+    <p>You can also reach me directly at: <a href="mailto:chukkachaitanya14@gmail.com">chukkachaitanya14@gmail.com</a></p>
     <form id="contactForm">
       <input type="text" placeholder="Your Name" name="name" required>
       <input type="email" placeholder="Your Email" name="email" required>
@@ -56,13 +87,9 @@
       <button type="submit">Send</button>
     </form>
   </section>
-  <section id="hero">
-  <canvas id="hero-canvas"></canvas>
-</section>
-
 
   <footer>
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+    <p>© 2025 Chaitanya Chukka. All rights reserved.</p>
   </footer>
 </body>
 </html>

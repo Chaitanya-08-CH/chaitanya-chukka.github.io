@@ -11,3 +11,19 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     alert('Please fill in all fields!');
   }
 });
+function easeOutExpo(x) {
+  return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+}
+
+function updateScrollEffect() {
+  const scrollTop = window.scrollY;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const rawFraction = scrollTop / maxScroll;
+  const smoothScroll = easeOutExpo(rawFraction);
+  const frameIndex = Math.min(frameCount - 1, Math.floor(smoothScroll * frameCount));
+  if (images[frameIndex]?.complete) {
+    render(images[frameIndex]);
+  }
+}
+
+window.addEventListener('scroll', updateScrollEffect);
